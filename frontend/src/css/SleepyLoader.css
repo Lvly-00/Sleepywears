@@ -1,0 +1,42 @@
+/* Fullscreen white background */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff; /* white bg */
+}
+
+/* Moon loader wrapper */
+.moon-loader {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  animation: rotate 2s linear infinite;
+}
+
+/* Full moon circle */
+.moon-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #f5db9fcc; /* moon color */
+  box-shadow: 0 0 15px rgba(245, 219, 159, 0.5);
+}
+
+/* Crescent cutout */
+.moon-crescent {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffffff; /* same as bg to create crescent */
+}
+
+/* Smooth rotation */
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
